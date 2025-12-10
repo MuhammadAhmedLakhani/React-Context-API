@@ -8,3 +8,21 @@
 
 *imagine if the nested compoent is 10 time nested from the paent component
 *sending data from parent to deep nested child will be a nightmare
+
+
+----redux a solution
+
+*redux another third party library solve this problem but it was complex to manage
+*complexities include:
+1)it is a javascript library
+2)react-redux was needed to implment redux festures like action(a function containing types of tasks) and reducers(another function)
+3)for asyncronous tasks like api call during action calling 
+so to solve this issue another library middleware has to be use for asyncromous tasks
+
+*for more complex data we still use redux
+
+
+
+
+
+
