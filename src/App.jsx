@@ -21,7 +21,7 @@ function App() {
     <div>
 
 
-      <User.Provider value={user}>
+      <User.Provider value={{user,setUser}}>
 
         <AppRouter />
 

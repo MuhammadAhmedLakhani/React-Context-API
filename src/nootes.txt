@@ -41,6 +41,21 @@ so to solve this issue another library middleware has to be use for asyncromous 
 *now we able to get the user(set through useState hook) value 
 inside button component though use of useContext() there
 
+*inshort "user" has become a global state
+
+-------updating context 
+
+*updating  state is super easy
+
+*just provide setUser function as an object along with user in a single object and passed this object ro value prop
+
+*in this way the setstate function is accessible throughout the program just  like global state thanks to context api
+
+
+
+
+
+
 
 
  
