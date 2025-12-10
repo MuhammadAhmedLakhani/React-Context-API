@@ -2,15 +2,31 @@ import logo from './logo.svg';
 import './App.css';
 import AppRouter from './config/router/router';
 import LayoutApp from './components/Layout';
-
+import { useContext, useState } from 'react';
+import User from './context/UserContext';
 
 
 
 function App() {
+
+  let [user, setUser] = useState({ name: "Ahmed", email: "ahmed@gmail.com" })
+
+
+
+
+
+
+
   return (
     <div>
 
-      <AppRouter />
+
+      <User.Provider value={user}>
+
+        <AppRouter />
+
+      </User.Provider>
+
     </div>
   );
 }

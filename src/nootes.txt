@@ -22,6 +22,30 @@ so to solve this issue another library middleware has to be use for asyncromous 
 *for more complex data we still use redux
 
 
+----context api(here comes context api with a bang)
+
+*allows deep component data transfer
+
+*first we need to make seprate context folder and a seprate file for context initialization
+
+*in our case we initialize our context in UserContext.js by using create-context there and provide null as value;
+
+*`then we import the initialization (in our case "User") in our app.jsx file
+
+*created context provide us .Provider component which we wrapped around our parent compoenet
+
+*Provider Component take value keyword as propname(value is necessary name here)
+
+*we provide usestate hook  to .Provider value prop
+
+*now we able to get the user(set through useState hook) value 
+inside button component though use of useContext() there
+
+
+
+ 
+
+
 
 
 
