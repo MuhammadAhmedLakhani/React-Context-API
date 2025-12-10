@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import Chat from '../context/ChatContext';
+
+import React, { useContext, useState } from 'react';
 import LOGO from '../assets/images/Logo.png'
 import Minilogo from '../assets/images/Minilogo.png'
 import { auth, signOut } from '../firebase/firebase'
@@ -26,7 +28,6 @@ import {
 import { Button, Layout, Menu, theme } from 'antd';
 import { Navigate, useNavigate } from 'react-router-dom';
 const { Header, Sider, Content } = Layout;
-
 
 
 
@@ -61,7 +62,9 @@ const LayoutApp = ({ children }) => {
     }
 
 
+        let chat1 = useContext(Chat)
 
+        console.log("chat",chat1)
 
     return (
         <Layout className='vh-100'>

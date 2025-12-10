@@ -52,6 +52,14 @@ inside button component though use of useContext() there
 *in this way the setstate function is accessible throughout the program just  like global state thanks to context api
 
 
+--
+
+*another important thing to keep in mind is that you usually
+you didnot wrap the context provider in app component(parent component) , until there is need which is rare
+
+*instead mostly context is used in particular page and it is acessible to all child of this component only not available globally unlike app component
+
+
 
 
 

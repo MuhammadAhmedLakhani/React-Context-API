@@ -22,13 +22,13 @@ function App() {
     <div>
 
 
-      <Chat.Provider value = {{chat,setChat}} >
+    
       <User.Provider value={{user,setUser}}>
 
         <AppRouter />
 
       </User.Provider>
-      </Chat.Provider>
+    
 
     </div>
   );
