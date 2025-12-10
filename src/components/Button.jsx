@@ -1,11 +1,12 @@
 import { Button } from 'antd';
 import user from "../context/UserContext.js"
-import { useContext } from 'react';
+import { useContext , useId } from 'react';
 
 function AppButton({title , obj}){
 
     let user1 = useContext(user)
 
+    const id = useId()
 
     console.log("user",user1)
 
@@ -13,7 +14,7 @@ function AppButton({title , obj}){
 
 
         //updating context with the setUser
-        <Button  onClick={()=>user1.setUser({name:"MuhammadAhmed",email:"MA@gmail.com"})
+        <Button  onClick={()=> console.log(id)
 
 
         }   type="primary">{title}</Button>
