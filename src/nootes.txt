@@ -1,0 +1,10 @@
+
+----deep component data transfer
+
+*lIKE IN THIS EXAMPLE WE ARE PASSING AN OBJECT FROM profile to button
+*but this is not straight forward as there is nested component between them 
+
+*so obj is passed from profile first and then it is passed to button component through the Appcard component through use of props
+
+*imagine if the nested compoent is 10 time nested from the paent component
+*sending data from parent to deep nested child will be a nightmare
