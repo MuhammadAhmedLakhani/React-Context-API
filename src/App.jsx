@@ -4,12 +4,13 @@ import AppRouter from './config/router/router';
 import LayoutApp from './components/Layout';
 import { useContext, useState } from 'react';
 import User from './context/UserContext';
-
+import Chat from './context/ChatContext'; 
 
 
 function App() {
 
   let [user, setUser] = useState({ name: "Ahmed", email: "ahmed@gmail.com" })
+  let [chat, setChat] = useState([])
 
 
 
@@ -21,11 +22,13 @@ function App() {
     <div>
 
 
+      <Chat.Provider value = {{chat,setChat}} >
       <User.Provider value={{user,setUser}}>
 
         <AppRouter />
 
       </User.Provider>
+      </Chat.Provider>
 
     </div>
   );
