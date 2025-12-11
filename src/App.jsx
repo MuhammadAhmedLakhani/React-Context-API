@@ -6,37 +6,16 @@ import { useContext, useReducer, useState } from 'react';
 import User from './context/UserContext';
 import Chat from './context/ChatContext'; 
 import { theme } from 'antd';
+import { reducer , InitialState } from './reducer';
+
+
+
 
 
 function App() {
 
   let [user, setUser] = useState({ name: "Ahmed", email: "ahmed@gmail.com" })
   
-  const InitialState = {
-    theme:"light",
-    version:20
-  }   
-
-
-  const reducer = (state,action)=>{
-
-    switch(action.type){
-
-    case "updateTheme":
-        return {
-          ...state,
-          theme:"dark"
-        }
-        break
-      default:
-        console.log("no action")
-      
-  
-  }
-
-
-    return state
-  }
 
 
  let [state,dispatch]= useReducer(reducer,InitialState)  
@@ -45,7 +24,7 @@ function App() {
   
 
 
-
+  
 
 
   return (

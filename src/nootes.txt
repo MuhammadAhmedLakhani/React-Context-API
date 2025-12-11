@@ -97,6 +97,14 @@ you didnot wrap the context provider in app component(parent component) , until 
 *render function runs and update the state and react rerender the ui to produce result
 
 
+--seprating reducer initialization
+
+
+*you can initialize hte reducer hook in s seprate file inside seprate folder
+
+
+*also unlike context whichcan be available globally it os only avaialbel to component in ehich you are using it
+
 
 
 
