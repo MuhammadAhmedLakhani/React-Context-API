@@ -59,6 +59,44 @@ you didnot wrap the context provider in app component(parent component) , until 
 
 *instead mostly context is used in particular page and it is acessible to all child of this component only not available globally unlike app component
 
+----useReducer hook
+
+*if you are tired of making sifferent state for different variable using useState again and again then useReducer is a gamechanger hook for you
+
+*it let you chnage state of multiple variable base upon the action you define in reduceer function
+
+
+
+---initialization
+
+
+*you need to define initial state of different variables in an object
+
+*you also need to define reducer function and function takes state and action as two seprate parameters
+
+*then you use "useReducer" function which return an array containing state and dispatch function
+
+
+*"dispatch" function useReducer provide basically is use for updating state
+
+*then question should arise that how dispatch know that which variable to update?
+
+*that is where "action" comes to provide solution
+
+*you provide "action" to siapatch function as argument
+
+*action must be in object form only and "type" must be used  
+(its a syntax)
+
+*in define you can define the specific action as an string like in our example updateTheme
+
+*to deal with different action you use "switch statement" inside render function
+
+*the flow is that whenever you call dispatch function react call the render function and passed the current state and action you define to render function
+
+*render function runs and update the state and react rerender the ui to produce result
+
+
 
 
 

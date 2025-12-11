@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import LayoutApp from "../components/Layout";
 import AppCard from "../components/Appcard";
-import { useContext, useState } from "react";
+import { useContext, useReducer, useState } from "react";
 import Chat from "../context/ChatContext";
 
 function Profile() {
